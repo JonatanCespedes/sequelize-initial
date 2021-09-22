@@ -9,5 +9,8 @@ module.exports = {
                 songs
             })
         })
+    },
+    detail: (req, res) => {
+        
     }
 }
