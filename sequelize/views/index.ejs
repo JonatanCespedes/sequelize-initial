@@ -24,6 +24,10 @@
     </nav>
     <h1><%= title %></h1>
     <p>Welcome to <%= title %></p>
+    <form action="/search" method="GET">
+      <input type="text" name="search">
+      <button type="submit">Buscar</button>
+    </form>
     <% songs.forEach(song => { %>
       <a href="/cancion/<%- song.id %> ">
         <div class="card" style="width: 18rem;">
